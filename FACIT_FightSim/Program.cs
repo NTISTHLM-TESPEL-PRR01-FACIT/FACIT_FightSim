@@ -3,8 +3,8 @@
 int heroHp = 100;
 int villainHp = 100;
 
-string heroName = "Micke";
-string villainName = "Martin";
+string heroName = "HERO";
+string villainName = "VILLAIN";
 
 Random generator = new Random();
 
