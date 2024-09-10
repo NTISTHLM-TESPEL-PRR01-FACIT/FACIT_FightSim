@@ -1,6 +1,4 @@
-﻿using System;
-
-int heroHp = 100;
+﻿int heroHp = 100;
 int villainHp = 100;
 
 string heroName = "HERO";
