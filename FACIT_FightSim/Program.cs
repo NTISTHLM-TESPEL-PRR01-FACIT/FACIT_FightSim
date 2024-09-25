@@ -4,14 +4,12 @@ int villainHp = 100;
 string heroName = "HERO";
 string villainName = "VILLAIN";
 
-Random generator = new Random();
-
 while (heroHp > 0 && villainHp > 0)
 {
   Console.WriteLine("\n----- ===== NY RUNDA ===== -----");
   Console.WriteLine($"{heroName}: {heroHp}  {villainName}: {villainHp}\n");
 
-  int heroDamage = generator.Next(20);
+  int heroDamage = Random.Shared.Next(20);
   villainHp -= heroDamage;
   villainHp = Math.Max(0, villainHp);
   Console.WriteLine($"{heroName} gör {heroDamage} skada på {villainName}");
