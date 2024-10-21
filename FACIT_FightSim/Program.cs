@@ -14,7 +14,7 @@ while (heroHp > 0 && villainHp > 0)
   villainHp = Math.Max(0, villainHp);
   Console.WriteLine($"{heroName} gör {heroDamage} skada på {villainName}");
 
-  int villainDamage = generator.Next(20);
+  int villainDamage = Random.Shared.Next(20);
   heroHp -= villainDamage;
   heroHp = Math.Max(0, heroHp);
   Console.WriteLine($"{villainName} gör {villainDamage} skada på {heroName}");
